@@ -1,0 +1,22 @@
+
+#up, #down, #left, #right {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+#up {
+    margin-left: 45%;
+}
+
+#down {
+    margin-left: 45%;
+}
+
+#right {
+    float: right;
+}
+
+.highlight {
+    opacity: 0.2;
+}

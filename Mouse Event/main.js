@@ -30,3 +30,14 @@ function myMove() {
         }
     }
 }
+
+document.querySelector("body").addEventListener("mousemove", getPosition);
+
+function getPosition() {
+    let x = event.screenX;
+    let y = event.screenY;
+    let posX = "X coords: " + x;
+    let posY = "Y coords: " + y;
+    document.querySelector("#axe-x").innerHTML = posX;
+    document.querySelector("#axe-y").innerHTML = posY;
+}
