@@ -44,3 +44,30 @@ document.querySelector("h3").innerHTML= "<em>Italic title ! yeah !</em>";
 document.querySelector("h2").innerHTML= "<strong>HTML doens't work !</strong>";
 
 //--------------------------
+let monUl = document.querySelector("ul");
+let monLi = document.createElement("li");
+monLi.innerHTML= "Mon meilleur ami est <a href='http://www.google.com'>Google</a>";
+monUl.appendChild(monLi);
+
+monLi.querySelector("a").style.color = "red";
+
+
+//-----------------------
+let monOl = document.querySelector("ol");
+
+/* while (monOl.firstChild) {
+    monOl.removeChild(monOl.firstChild);
+}  */
+
+for (let i = monOl.children.length-1; i >= 0; i--) {
+    monOl.removeChild(monOl.children[i]);
+}
+
+//-------------
+let monTableau = ["Silent Teacher","Code Monkey", "CodeCombat"];
+
+for (let i = 0; i < monTableau.length; i++) {
+    let newLi  = document.createElement("li");
+    newLi.innerHTML = monTableau[i];
+    monOl.appendChild(newLi);
+}
