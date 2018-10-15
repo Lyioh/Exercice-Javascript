@@ -187,3 +187,34 @@ function conversionTemperature() {
     }
 }
 
+function calculIMC() {
+    let poids = prompt("Quel est votre poids en Kg?");
+    poids = Number(poids);
+    let taille = prompt("Quel est votre taille?");
+    taille = Number(taille);
+    let IMC = poids / (Math.pow(taille, 2));
+    // TO fixed permet darondir à 2 chiffre après la virgule
+    IMC = IMC.toFixed(2);
+
+    if (IMC < 16.5) {
+        alert("Votre IMC est de " + IMC + ", vous êtes en dénutrition ou vivait la famine");
+    } 
+    else if (IMC >= 16.5 && IMC < 18.5) {
+        alert("Votre IMC est de " + IMC + ", vous êtesatteint de maigreur");
+    }
+    else if (IMC >= 18.5 && IMC < 25) {
+        alert("Votre IMC est de " + IMC + ", vous êtes de corpulence normal");
+    }
+    else if (IMC >= 25 && IMC < 30) {
+        alert("Votre IMC est de " + IMC + ", vous êtes en surpoids");
+    }
+    else if (IMC >= 30 && IMC < 35) {
+        alert("Votre IMC est de " + IMC + ", vous êtes en obésité modérée");
+    }
+    else if (IMC >= 35 && IMC < 40) {
+        alert("Votre IMC est de " + IMC + ", vous êtes en obésité sévère");
+    }
+    else if (IMC > 40) {
+        alert("Votre IMC est de " + IMC + ", vous êtes en obésité morbide");
+    }
+}
