@@ -70,39 +70,88 @@ var everyPossiblePair = function (array) {
 }
 
 var allElementsExceptFirstThree = function (array) {
-    return 'Write your method here';
+    return array.splice(3, array.length);
 }
 
 var addElementToBeginning = function (array, element) {
-    return 'Write your method here';
+    array.unshift(element);
+    return array
 }
 
 var sortByLastLetter = function (array) {
-    return 'Write your method here';
+    let newArray
+    //Je reverse tout les mot du tableau
+    function reverseMe(myArray) {
+        return myArray.split("").reverse().join("");
+    }
+
+    newArray = array.map(reverseMe);
+    console.log(newArray)
+    //
+    //Maintenant je les tri par ordre alphabetique
+    newArray.sort();
+    console.log(array)
+    return newArray.map(reverseMe);
 }
 
 var getFirstHalf = function (string) {
-    return 'Write your method here';
+    let myString;
+    myString = string.length;
+    
+    return string.substring(0, Math.ceil(myString/2));
 }
 
 var makeNegative = function (number) {
-    return 'Write your method here';
+
+    return -Math.abs(number);
 }
 
 var numberOfPalindromes = function (array) {
-    return 'Write your method here';
+    let monArray = [];
+    let compare;
+
+    function isPalindrome(word) {
+        compare = word.split("").reverse().join("");
+        if (compare === word) {
+            compare.split("").reverse().join("");
+            return compare
+        }
+    }
+
+    monArray = array.filter(isPalindrome);
+    return monArray.length;
 }
 
 var shortestWord = function (array) {
-    return 'Write your method here';
+
+    function worde(mot1, motEtudier) {
+        if (mot1.length < motEtudier.length) {
+            return mot1
+        } else 
+            return motEtudier
+    }
+
+    return array.reduce(worde); 
 }
 
 var longestWord = function (array) {
-    return 'Write your method here';
+    
+    function worde(mot1, motEtudier) {
+        if (mot1.length > motEtudier.length) {
+            return mot1
+        } else 
+            return motEtudier
+    }
+
+    return array.reduce(worde); 
 }
 
 var sumNumbers = function (array) {
-    return 'Write your method here';
+
+    function worde(total, chiffre) {
+        return total + chiffre
+    }
+    return array.reduce(worde); 
 }
 
 var repeatElements = function (array) {
