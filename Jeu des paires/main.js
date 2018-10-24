@@ -19,6 +19,7 @@ function letsStart() {
         console.log(imageDiv[i])  
     }
     document.querySelector(".start").innerHTML = "Game is ON";
+    document.querySelector(".start").disabled = true;
     gameIsOn = true;
 } 
 
@@ -81,7 +82,7 @@ document.querySelector(".container").addEventListener("mouseup", function onMous
         countUntilVictory = 0;
         gameIsOn = false;
         document.querySelector(".start").innerHTML = "Let's Start"
-        alert("To restart the Game click on Start")
+        document.querySelector(".start").disabled = false;
     }
 })
   
