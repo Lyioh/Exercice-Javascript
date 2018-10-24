@@ -16,10 +16,9 @@ function letsStart() {
         number = Math.floor(Math.random() * imageArrayCopy.length);
         imageDiv[i].innerHTML = imageArrayCopy[number];
         imageArrayCopy.splice(number, 1);
-        console.log(imageDiv[i])
-        //document.querySelector(".start")
-        console.log(imageDiv)
+        console.log(imageDiv[i])  
     }
+    document.querySelector(".start").innerHTML = "Game is ON";
     gameIsOn = true;
 } 
 
@@ -81,7 +80,8 @@ document.querySelector(".container").addEventListener("mouseup", function onMous
         secondValue = "";
         countUntilVictory = 0;
         gameIsOn = false;
-        alert("To start the Game click on Start")
+        document.querySelector(".start").innerHTML = "Let's Start"
+        alert("To restart the Game click on Start")
     }
 })
   
