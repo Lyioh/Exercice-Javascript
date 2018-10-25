@@ -1,0 +1,109 @@
+body {
+    margin: 0 auto;
+}
+/*-------------------- BODY  ----------------------------------- */
+body::after {
+    content: "";
+    background: url("images/fondCliker.png") repeat 0 0;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    -webkit-animation: backSlide 20s linear infinite;
+    animation: backSlide 20s linear infinite; 
+  }
+@-webkit-keyframes backSlide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@keyframes backSlide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+/*------------------------ Container ----------------------------- */
+#container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 100vh;
+}
+/*-------------------------------- Left SIde -------------------------- */
+#leftSide {
+    border-color: red;
+    display: grid;
+    grid-template-rows: 10% 60% 30%;
+    height: 100vh;
+}
+
+/*------------ Score --------------- */
+#score {
+    text-align: center;
+    margin: 0 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#score p {
+     margin: 0 0; 
+}
+/*  ----------Clicker --------------- */
+#clicker {
+    text-align: center;
+}
+
+#theClicker {
+    background-image: radial-gradient(circle, red, #E0E0E0, #E0E0E0); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    outline: none;
+    border-radius: 90%;
+    font-size: 150px;
+    padding: 150px;
+    display: inline-block;
+}
+
+#theClicker:active {
+    transform: translateY(4px);
+}
+
+/*------------------- Buffs ------------------- */
+#buff {
+    text-align: center;
+}
+
+/*-----------------------------RIght SIde --------------------------------- */
+#rightside {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 100vh;
+}
+
+#updateTitle {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#update {
+    
+}
+
+.button {
+    display: block;
+    margin: 5px;
+    padding: 12px;
+    width: 45%;
+}
+
+#multiplicateurButton {
+    display: inline;
+}
+
+#infoMultiplicateur {
+  display: inline;
+
+}

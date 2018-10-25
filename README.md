@@ -5,12 +5,14 @@
 ## Introduction
 
  The introduction was to make us see the different tools in JavaScript.
+
  [Here is the repo](https://github.com/Lyioh/Exercice-Javascript/tree/master/Introduction "Introduction repository")
 
 ## DOM
 
  We had to change the html file with a .js files using the "pointer".
  I have learn about the "querySelector" and use it to be able to do this exercice.
+ 
  [Here is the repo](https://github.com/Lyioh/Exercice-Javascript/tree/master/DOM/Manipulation%20des%20classes "DOM repository")
 
 ## Keyboard and Mouse EVENT
