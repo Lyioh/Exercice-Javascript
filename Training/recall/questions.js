@@ -253,7 +253,8 @@ var titleize = function (string) {
     let myArray = new Array;
     function capitelizeOtNot(word, indice) {
         if (indice == 0) {
-            return word.charAt(0).toUpperCase() + word.slice(1);
+            word = word.charAt(0).toUpperCase() + word.slice(1);
+            console.log(word)
         }
         else if (myStringArray[(indice - 1)].includes(".") == false) {
             for (i = 0; i < stopwords.length; i++) {
