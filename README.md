@@ -5,7 +5,11 @@
 ## Introduction
 
  The introduction was to make us see the different tools in JavaScript.
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 7daab8b8fc690240399ee8fd3322201bc24f1074
  [Here is the repo](https://github.com/Lyioh/Exercice-Javascript/tree/master/Introduction "Introduction repository")
 
 ## DOM
