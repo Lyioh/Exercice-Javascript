@@ -1,0 +1,23 @@
+body,html {
+    margin: 0;
+}
+
+#search-section {
+    display: grid;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#artist-list {
+    list-style: none;
+    cursor: pointer;
+}
+
+#result-section {
+    display: grid;
+    justify-content: center;
+}
+
+#songs {
+    list-style: none;
+}

@@ -67,7 +67,7 @@ function show_image(width, height, index) {
     img.src = pictureArray[index];
     img.width = width;
     img.height = height;
-    document.querySelector("#right").appendChild(img);
+    right.appendChild(img);
 }
 
 /*-------------------- Letter IN -------------------- */
